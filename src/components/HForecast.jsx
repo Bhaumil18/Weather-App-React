@@ -7,7 +7,7 @@ function HF({ time, tmp, tt, index }) {
 
     return <div className='flex flex-col items-center justify-center min-w-32'>
         <p className='font-light text-sm '>{time}</p>
-        <img src={hf.forecast.forecastday[0].hour[index].condition.icon} className='w-12 h-12 my-1 scale-125' />
+        <img alt="tmp" src={hf.forecast.forecastday[0].hour[index].condition.icon} className='w-12 h-12 my-1 scale-125' />
         <p className='font-medium'>{cf ? tmp.temp_c : tmp.temp_f}°</p>
     </div>
 }

@@ -11,7 +11,7 @@ function HF({ day, tmp, tt, index }) {
 
     return <div className='flex flex-col items-center justify-center min-w-32'>
         <p className='font-light text-sm '>{days[d.getDay()]}</p>
-        <img src={hf?.forecast?.forecastday[index].day.condition.icon} className='w-12 my-1 scale-125' />
+        <img src={hf?.forecast?.forecastday[index].day.condition.icon} alt="tmp" className='w-12 my-1 scale-125' />
         <p className='font-medium'>{cf ? tmp.avgtemp_c : tmp.avgtemp_f}°</p>
     </div>
 }

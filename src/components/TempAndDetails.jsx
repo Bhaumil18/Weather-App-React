@@ -16,7 +16,7 @@ function TempAndDetails() {
             </div>
 
             <div className="flex justify-between items-center py-3 text-white">
-                <img src={hf.current.condition.icon} className='w-20 scale-125' />
+                <img alt="tmp" src={hf.current.condition.icon} className='w-20 scale-125' />
                 <p className='text-5xl'>{cf ? hf.current.temp_c : hf.current.temp_f}°</p>
                 <div className="flex flex-col space-y-2">
                     <div className='flex font-light text-sm items-center justify-center'>

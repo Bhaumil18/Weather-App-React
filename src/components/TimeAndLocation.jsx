@@ -26,7 +26,7 @@ function TimeAndLocation() {
 
     useEffect(() => {
             fetchTime()
-    }, [hf])
+    }, [hf,fetchTime])
 
 
     // if (td && td.length) {

@@ -7,7 +7,7 @@ function TimeAndLocation() {
 
     async function fetchTime() {
         try {
-            const res = await fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=LFRX6JGQ5USF&format=json&by=position&lat=${hf.location.lat}&lng=${hf.location.lon}`)
+            const res = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=LFRX6JGQ5USF&format=json&by=position&lat=${hf.location.lat}&lng=${hf.location.lon}`)
             const data = await res.json()
 
             const { formatted, zoneName } = data

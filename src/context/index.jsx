@@ -10,7 +10,7 @@ function GlobalState({ children }) {
 
     async function fetchData(ss) {
         try {
-            const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=100921fea4de43b6b1661809240601&q=${ss}&days=5`)
+            const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=100921fea4de43b6b1661809240601&q=${ss}&days=5`)
             const dt = await res.json()
             if (dt) {
                 setHf(dt)
